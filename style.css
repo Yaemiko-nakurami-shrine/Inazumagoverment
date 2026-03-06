@@ -1,12 +1,46 @@
 body {
+    /* Uses the specified Inazuma background with a dark overlay */
     background: linear-gradient(rgba(13, 13, 26, 0.8), rgba(13, 13, 26, 0.8)), 
                 url('https://i.pinimg.com/1200x/69/e8/57/69e857df1a44d6b51b8c99e8e7bab53b.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #c9b0ff;
+    font-family: 'Garamond', serif;
+    margin: 0;
+    line-height: 1.6;
 }
-/* Table Styling for the Registry */
+
+header {
+    background: linear-gradient(180deg, #2a1b4d 0%, #0d0d1a 100%);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 3px solid #9d81ff;
+}
+
+.electro-logo {
+    font-size: 3rem;
+    text-shadow: 0 0 15px #9d81ff;
+    margin-bottom: 10px;
+}
+
+.status-bar {
+    background: #1b1b3a;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 20px 0;
+    border-top: 1px solid #4d3b8e;
+    border-bottom: 1px solid #4d3b8e;
+}
+
+.active {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Registry Table Styling */
 .registry {
     max-width: 800px;
     margin: 20px auto;
@@ -29,15 +63,16 @@ th, td {
 th {
     background-color: #2a1b4d;
     color: #9d81ff;
-    text-transform: uppercase;
-    font-size: 0.8rem;
 }
 
 .confiscated {
-    color: #7df9ff; /* Electric Blue */
+    color: #7df9ff;
     font-weight: bold;
 }
 
-.pending {
-    color: #ff9d00; /* Warning Orange */
+.warning {
+    text-align: center;
+    font-style: italic;
+    color: #9d81ff;
+    margin-top: 50px;
 }
